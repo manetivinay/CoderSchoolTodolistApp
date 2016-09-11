@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vinaymaneti.coderschooltodolistapp.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/registerViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/signup_screen"
+            android:textColor="@color/icons"
+            android:textSize="24sp"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/registerUserNameInputLayout"
+            style="@style/TextInputLayout"
+            android:layout_below="@id/registerViewBackground"
+            app:errorTextAppearance="@style/error_appearance">
+
+            <EditText
+                android:id="@+id/registerInputUserName"
+                style="@style/EditText"
+                android:hint="@string/userName"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/registerEmailInputLayout"
+            style="@style/TextInputLayout"
+            android:layout_below="@id/registerUserNameInputLayout"
+            app:errorTextAppearance="@style/error_appearance">
+
+            <EditText
+                android:id="@+id/registerInputEmail"
+                style="@style/EditText"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/registerPasswordInputLayout"
+            style="@style/TextInputLayout"
+            android:layout_below="@id/registerEmailInputLayout"
+            app:errorTextAppearance="@style/error_appearance">
+
+            <EditText
+                android:id="@+id/registerInputPassword"
+                style="@style/EditText"
+                android:hint="@string/password"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerPasswordInputLayout"
+            android:layout_margin="24dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/login_button"
+            android:textColor="@color/icons"
+            android:textSize="18dp"/>
+
+
+        <TextView
+            android:id="@+id/linkAlreadyMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_register"
+            android:layout_margin="24dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="@string/already_a_member_login"
+            android:textSize="18dip"/>
+
+    </RelativeLayout>
+
+</ScrollView>

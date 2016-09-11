@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Coder School Todo list App</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_screen">Login Screen</string>
+    <string name="signup_screen">Sign up Screen</string>
+    <string name="email">Email</string>
+    <string name="userName">Username</string>
+    <string name="password">password</string>
+    <string name="login_button">Login</string>
+    <string name="authenticating">Authenticating...</string>
+    <string name="already_a_member_login">Already a member? Login</string>
+    <string name="no_account_yet_create_one">No account yet? Create one</string>
+</resources>
