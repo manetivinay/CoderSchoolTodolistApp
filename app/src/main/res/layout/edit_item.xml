@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="AlertDialog Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    <View
+        android:id="@+id/horizontal_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_tv"
+        android:background="@color/colorPrimary"/>
+
+
+    <EditText
+        android:id="@+id/message_tv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/horizontal_view"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_corner_et"
+        android:gravity="top|left"
+        android:inputType="textImeMultiLine"
+        android:padding="5dp"
+        android:text="Hello world"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="cancel"
+            android:textColor="@color/icons"
+            android:textSize="18dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/ok_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="ok"
+            android:textColor="@color/icons"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
